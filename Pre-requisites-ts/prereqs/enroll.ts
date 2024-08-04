@@ -1,7 +1,7 @@
 import { Connection, Keypair, PublicKey } from "@solana/web3.js"
 import { Program, Wallet, AnchorProvider } from "@coral-xyz/anchor"
-import { IDL, WbaPrereq } from "./programs/wba_prereq";
-import wallet from "./wba-wallet.json"
+import { IDL, WbaPrereq } from "../programs/wba_prereq";
+import wallet from "../wba-wallet.json"
 
 // We're going to import our keypair from the wallet file
 const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));
